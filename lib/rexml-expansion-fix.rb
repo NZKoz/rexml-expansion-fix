@@ -18,7 +18,13 @@ require 'rexml/entity'
 module REXML
   class Entity < Child
     def unnormalized
-      document.record_entity_expansion!
+      # Due to an optimisation in REXML, the default entities aren't
+      # associated with a document.  As these enties are defined and
+      # not recursive, we know that expanding them won't cause any
+      # issues.  Other entities in the document will still have
+      # the association to the document preventing this from opening
+      # a new attack vector.
+      document.record_entity_expansion! if document
       v = value()
       return nil if v.nil?
       @unnormalized = Text::unnormalize(v, parent)

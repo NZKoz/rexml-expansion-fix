@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name     = "rexml-expansion-fix"
-  s.version  = "1.0.0"
-  s.date     = "2008-08-22"
+  s.version  = "1.0.1"
+  s.date     = "2008-08-31"
   s.summary  = "Prevents potentitial DoS attacks to rexml"
   s.email    = "michael@koziarski.com"
   s.homepage = "http://github.com/NZKoz/rexml-expansion-fix"
