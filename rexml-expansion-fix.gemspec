@@ -3,10 +3,10 @@ Gem::Specification.new do |s|
   s.version  = "1.0.0"
   s.date     = "2008-08-22"
   s.summary  = "Prevents potentitial DoS attacks to rexml"
-  s.email    = "tom@rubyisawesome.com"
-  s.homepage = "http://github.com/schacon/grit"
-  s.description = "Prevents"
-  s.has_rdoc = true
+  s.email    = "michael@koziarski.com"
+  s.homepage = "http://github.com/NZKoz/rexml-expansion-fix"
+  s.description = "Prevents DoS attacks using the billion-laughs or entity-explosion techniques."
+  s.has_rdoc = false
   s.authors  = ["Michael Koziarski"]
   s.files    = ["README.textile", 
 		"LICENSE",
